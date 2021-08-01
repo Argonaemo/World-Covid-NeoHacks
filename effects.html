@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="/assets/images/bacteria.png"/>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+    <!-- ============= credit to flaticon for the favicon ================== -->
+    <title>Effects | World Covid Info</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <h1 class="playfair">Effect of Covid-19</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="#"  class="highlight">Effects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="statsmain">
+        <article class="bottom-border statsdash efdash">
+            <div class="stattext efdash">
+                <h1 class="playfair">Impact on World GDP</h1>
+                <p>Global inflation, which has increased along with the economic recovery, is anticipated to continue to rise over the rest of the year; however, it is expected to remain within the target range for most countries. In those emerging market and developing economies in which inflation rises above target, this trend may not warrant a monetary policy response provided it is temporary and inflation expectations remain well-anchored.</p>
+            </div>
+            <div class="playfair statbesar">
+                <canvas id="impact"></canvas>
+            </div>
+
+        </article>
+        <article class="bottom-border statsdash efdash">
+            <div class="stattext efdash socialLife">
+                <h1 class="playfair">Impact on Social</h1>
+                <p>Older persons are particularly susceptible to the risk of infection from COVID-19, especially those with chronic health conditions such as hypertension, cardiovascular disease and diabetes.
+                    <br>
+                    Older persons are not just struggling with greater health risks but are also likely to be less capable of supporting themselves in isolation. Although social distancing is necessary to reduce the spread of the disease, if not implemented correctly, such measures can also lead to increased social isolation of older persons at a time when they may be at most need of support.</p>
+                <p>
+                    Even at the best of times, persons with disabilities face challenges in accessing health-care services, due to lack of availability, accessibility, affordability, as well as stigma and discrimination. The risks of infection from COVID-19 for persons with disabilities are compounded by other issues, which warrant specific action: disruption of services and support, pre-existing health conditions in some cases which leave them more at risk of developing serious illness or dying, being excluded from health information and mainstream health provision, living in a world where accessibility is often limited and where barriers to goods and services are a challenge, and being disproportionately more likely to live in institutional settings.
+                </p>
+                <p>
+                    Many governments have called on youth to embrace the effort to protect themselves and the overall population. Youth are also in a position to help those who are most vulnerable, and to aid in increasing public health social awareness campaigns among their communities. Thus, youth are critical to limiting the virus’s spread and its impact on public health, society, and the economy at large.
+
+In terms of employment, youth are disproportionately unemployed, and those who are employed often work in the informal economy or gig economy, on precarious contracts or in the service sectors of the economy, that are likely to be severely affected by COVID-19.
+                </p>
+                <a href="https://www.un.org/development/desa/dspd/everyone-included-covid-19.html" target="_blank" style="text-decoration-line: none; color: red;">Read More</a>
+            </div>
+            <div class="playfair statbesar">
+                <canvas id="social"></canvas>
+            </div>
+        </article>
+        <article class="statsdash efdash">
+            <div class="playfair statbesar">
+                <canvas id="student"></canvas>
+            </div>
+            <div class="stattext">
+                <h1 class="playfair">Impact on students</h1>
+                <p>The COVID-19 pandemic has introduced uncertainty into major aspects of national and global society, including for schools. For example, there is uncertainty about how school closures last spring impacted student achievement, as well as how the rapid conversion of most instruction to an online platform this academic year will continue to affect achievement. Without data on how the virus impacts student learning, making informed decisions about whether and when to return to in-person instruction remains difficult. Even now, education leaders must grapple with seemingly impossible choices that balance health risks associated with in-person learning against the educational needs of children, which may be better served when kids are in their physical schools.</p>
+                <a href="https://www.brookings.edu/blog/brown-center-chalkboard/2020/12/03/how-is-covid-19-affecting-student-learning/" target="_blank" style="text-decoration-line: none; color: red;">Read More</a>
+            </div>
+        </article>
+
+        <!-- ============================ sub pages ===================== -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <script src="/script/component/impact.js"></script>
+    <script src="/script/component/social.js"></script>
+    <script src="/script/component/student.js"></script>
+</body>
+</html>
